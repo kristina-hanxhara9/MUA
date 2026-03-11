@@ -1,0 +1,36 @@
+{
+  "name": "codrops-atmospheric-depth-gallery",
+  "version": "1.0.0",
+  "description": "A Three.js depth gallery where images shape their own environment — mood-driven GLSL backgrounds, parallax motion, and velocity-reactive effects.",
+  "author": {
+    "name": "Houmahani Kane",
+    "email": "houm.kane@gmail.com",
+    "url": "https://github.com/houmahani/"
+  },
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/houmahani/codrops-depth-gallery"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.3.1",
+    "vite-plugin-glsl": "^1.5.5"
+  },
+  "dependencies": {
+    "three": "^0.183.0",
+    "tweakpane": "^4.0.5"
+  }
+}

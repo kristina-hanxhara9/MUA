@@ -212,9 +212,9 @@ export default function BookingSection() {
             <label className="block text-xs uppercase tracking-widest text-stone-400 font-semibold mb-2 ml-1">Message</label>
             <textarea className="w-full bg-stone-900/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20 focus:bg-stone-900/80 transition-all placeholder-stone-600 text-white resize-none h-24" placeholder="Tell us about your event..."></textarea>
           </div>
-          <button type="button" className="w-full bg-white text-stone-900 py-5 rounded-xl uppercase tracking-widest text-sm font-bold hover:bg-stone-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)]">
+          <a href="https://mua.butterfly-ai.co.uk" target="_blank" rel="noopener noreferrer" className="block w-full bg-white text-stone-900 py-5 rounded-xl uppercase tracking-widest text-sm font-bold hover:bg-stone-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.1)] text-center">
             Request Booking
-          </button>
+          </a>
         </form>
       </div>
     </section>

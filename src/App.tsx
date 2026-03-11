@@ -34,9 +34,9 @@ export default function App() {
       <footer id="contact" className="bg-stone-900 text-stone-400 py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif text-white mb-8">Ready for your transformation?</h2>
-          <button className="bg-white text-stone-900 px-8 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-stone-200 transition-colors mb-16">
+          <a href="https://mua.butterfly-ai.co.uk" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-stone-900 px-8 py-4 rounded-full uppercase tracking-widest text-sm hover:bg-stone-200 transition-colors mb-16">
             Book an Appointment
-          </button>
+          </a>
           
           <div className="flex flex-col md:flex-row justify-between items-center border-t border-stone-800 pt-8 text-sm tracking-widest uppercase">
             <div className="mb-4 md:mb-0">© 2026 enxhithemuaa</div>

@@ -55,7 +55,7 @@ export default function StickyGridHero() {
           <img
             src={images[0]}
             alt="Makeup Hero"
-            className="w-full h-full object-cover object-top opacity-80"
+            className="w-full h-full object-cover opacity-80"
           />
           <div className="absolute inset-0 bg-stone-900/40" />
         </div>

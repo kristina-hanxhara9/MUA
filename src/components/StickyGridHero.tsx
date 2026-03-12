@@ -52,10 +52,10 @@ export default function StickyGridHero() {
       {/* Intro Section (Hero) */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-stone-900">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={images[0]} 
-            alt="Makeup Hero" 
-            className="w-full h-full object-cover opacity-80"
+          <img
+            src={images[0]}
+            alt="Makeup Hero"
+            className="w-full h-full object-cover object-top opacity-80"
           />
           <div className="absolute inset-0 bg-stone-900/40" />
         </div>

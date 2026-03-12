@@ -112,13 +112,7 @@ function UnrollingImage({ url, scrollProgress, start, end, position, scaleMultip
     if (materialRef.current) {
       let p = (scrollProgress.get() - start) / (end - start);
       p = Math.max(0, Math.min(1, p));
-      
-      // Smooth out the progress slightly
-      materialRef.current.uniforms.progress.value = THREE.MathUtils.lerp(
-        materialRef.current.uniforms.progress.value,
-        p,
-        0.1
-      );
+      materialRef.current.uniforms.progress.value = p;
     }
   });
 

@@ -39,7 +39,7 @@ export default function App() {
           </button>
           
           <div className="flex flex-col md:flex-row justify-between items-center border-t border-stone-800 pt-8 text-sm tracking-widest uppercase">
-            <div className="mb-4 md:mb-0">© 2026 enxhithemuaa</div>
+            <div className="mb-4 md:mb-0">© 2026 makeupbydoori</div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-white transition-colors">Instagram</a>
               <a href="#" className="hover:text-white transition-colors">Pinterest</a>

@@ -67,7 +67,7 @@ export default function StickyGridHero() {
             transition={{ duration: 1, delay: 0.2 }}
             className="text-5xl md:text-8xl font-serif mb-6"
           >
-            enxhithemuaa
+            makeupbydoori
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0 }}
@@ -92,7 +92,7 @@ export default function StickyGridHero() {
               style={{ y: titleY, marginTop: "15vh" }}
             >
               <h2 className="text-5xl md:text-8xl font-serif text-white leading-tight tracking-tight drop-shadow-2xl">
-                enxhithemuaa
+                makeupbydoori
               </h2>
               
               <motion.div 

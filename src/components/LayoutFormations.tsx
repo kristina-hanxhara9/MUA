@@ -120,7 +120,7 @@ export default function LayoutFormations() {
   return (
     <section ref={containerRef} className="relative bg-stone-950 text-stone-200">
       {/* Sticky Images Container */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden pointer-events-none z-0">
+      <div className="sticky top-0 h-svh w-full overflow-hidden pointer-events-none z-0">
         <div className="relative w-full h-full flex items-center justify-center">
           {images.map((src, i) => (
             <FormationImage key={i} src={src} index={i} scrollYProgress={scrollYProgress} />
@@ -129,32 +129,32 @@ export default function LayoutFormations() {
       </div>
 
       {/* Scrolling Text Sections with clear divisions */}
-      <div className="relative z-10 -mt-[100vh]">
-        <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
+      <div className="relative z-10 -mt-[100svh]">
+        <section className="h-svh flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
           <h2 className="text-5xl md:text-8xl font-serif mb-6 drop-shadow-2xl">The Collection</h2>
           <p className="max-w-md text-stone-300 tracking-widest uppercase text-sm drop-shadow-md">
             A curated selection of our finest work, showcasing versatility and precision.
           </p>
         </section>
-        <div className="h-screen pointer-events-none" />
-        
-        <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
+        <div className="h-svh pointer-events-none" />
+
+        <section className="h-svh flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
           <h2 className="text-5xl md:text-8xl font-serif mb-6 drop-shadow-2xl">Artistry</h2>
           <p className="max-w-md text-stone-300 tracking-widest uppercase text-sm drop-shadow-md">
             Every face is a unique canvas. We bring out the natural beauty in everyone.
           </p>
         </section>
-        <div className="h-screen pointer-events-none" />
-        
-        <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
+        <div className="h-svh pointer-events-none" />
+
+        <section className="h-svh flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
           <h2 className="text-5xl md:text-8xl font-serif mb-6 drop-shadow-2xl">Perfection</h2>
           <p className="max-w-md text-stone-300 tracking-widest uppercase text-sm drop-shadow-md">
             Flawless execution from every angle, ensuring you look stunning in any light.
           </p>
         </section>
-        <div className="h-screen pointer-events-none" />
-        
-        <section className="h-screen flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
+        <div className="h-svh pointer-events-none" />
+
+        <section className="h-svh flex flex-col items-center justify-center px-6 text-center bg-stone-950/70 backdrop-blur-md border-y border-white/5">
           <h2 className="text-5xl md:text-8xl font-serif mb-6 drop-shadow-2xl">Transform</h2>
           <p className="max-w-md text-stone-300 tracking-widest uppercase text-sm drop-shadow-md">
             Step into a new version of yourself with our signature transformations.

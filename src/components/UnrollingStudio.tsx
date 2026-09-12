@@ -1,4 +1,4 @@
-import { useRef, useMemo, Suspense } from 'react';
+import { useRef, useMemo, Suspense, Component, type ReactNode } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useScroll } from 'motion/react';
 import { useTexture } from '@react-three/drei';
@@ -178,6 +178,16 @@ function SceneContent({ scrollYProgress }: any) {
   );
 }
 
+class CanvasErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
+  state = { hasError: false };
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    return this.state.hasError ? null : this.props.children;
+  }
+}
+
 export default function UnrollingStudio() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -187,12 +197,14 @@ export default function UnrollingStudio() {
 
   return (
     <div ref={containerRef} className="relative h-[300vh] bg-stone-100 w-full">
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
+      <div className="sticky top-0 h-svh w-full overflow-hidden flex items-center justify-center">
         
         <div className="absolute inset-0 z-0">
-          <Canvas camera={{ position: [0, 0, 5], fov: 50 }} frameloop="always">
-            <SceneContent scrollYProgress={scrollYProgress} />
-          </Canvas>
+          <CanvasErrorBoundary>
+            <Canvas camera={{ position: [0, 0, 5], fov: 50 }} frameloop="always">
+              <SceneContent scrollYProgress={scrollYProgress} />
+            </Canvas>
+          </CanvasErrorBoundary>
         </div>
 
         <div className="relative z-10 pointer-events-none w-full max-w-7xl mx-auto px-6 flex flex-col justify-end md:justify-center h-full pb-12 md:pb-0">

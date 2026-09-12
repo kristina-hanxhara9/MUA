@@ -50,7 +50,7 @@ export default function StickyGridHero() {
   return (
     <>
       {/* Intro Section (Hero) */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-stone-900">
+      <section className="relative h-svh flex items-center justify-center overflow-hidden bg-stone-900">
         <div className="absolute inset-0 z-0">
           <img
             src={images[0]}
@@ -83,7 +83,7 @@ export default function StickyGridHero() {
 
       {/* Sticky Grid Section */}
       <section ref={containerRef} className="relative h-[400vh] bg-stone-950">
-        <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+        <div className="sticky top-0 h-svh w-full overflow-hidden flex flex-col items-center justify-center">
           
           {/* Content Overlay */}
           <div className="absolute inset-0 z-20 flex flex-col items-center pointer-events-none">
